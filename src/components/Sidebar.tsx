@@ -1,4 +1,5 @@
 import { Pencil } from "lucide-react";
+import { Avatar } from "./Avatar";
 
 export const Sidebar = () => {
   return (
@@ -8,14 +9,12 @@ export const Sidebar = () => {
         src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=500&h=750&dpr=0.6"
         alt="user profile cover"
       />
-      {/* profile */}
       <div className="flex flex-col items-center -mt-8">
-        {/* avatar */}
-        <img
-          className="w-12 h-12 rounded-lg border-4 border-gray-800 outline-2 outline-green-500 box-content"
+        <Avatar
           src="https://github.com/joaogdoqr.png"
           alt="user profile image"
         />
+
         <strong className="mt-4 text-gray-100 leading-[1.6rem]">Tux</strong>
         <span className="text-[0.875rem] text-gray-400 leading-[1.6rem]">
           Web Developer
